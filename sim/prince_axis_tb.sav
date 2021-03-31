@@ -1,0 +1,48 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon Jan  4 12:59:38 2021
+[*]
+[dumpfile] "/home/bruno/projects/prince/mysim/prince_axis_tb.vcd"
+[dumpfile_mtime] "Mon Jan  4 12:58:41 2021"
+[dumpfile_size] 47392
+[savefile] "/home/bruno/projects/prince/mysim/prince_axis_tb.sav"
+[timestart] 112030
+[size] 1620 600
+[pos] -1 -1
+*-14.045283 145000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] prince_axis_tb.
+[sst_width] 233
+[signals_width] 182
+[sst_expanded] 1
+[sst_vpaned_height] 144
+@28
+prince_axis_tb.ACLK
+prince_axis_tb.ARESETN
+@22
+prince_axis_tb.ciphertext[63:0]
+prince_axis_tb.S_AXIS_TDATA[31:0]
+@28
+prince_axis_tb.S_AXIS_TLAST
+prince_axis_tb.S_AXIS_TLAST
+prince_axis_tb.S_AXIS_TREADY
+prince_axis_tb.M_AXIS_TREADY
+prince_axis_tb.S_AXIS_TVALID
+prince_axis_tb.uut.S_AXIS_TVALID
+@22
+prince_axis_tb.uut.S_AXIS_TDATA[31:0]
+prince_axis_tb.uut.S_AXIS_TDATA[31:0]
+@28
+prince_axis_tb.uut.S_AXIS_TREADY
+prince_axis_tb.uut.state[1:0]
+prince_axis_tb.uut.ARESETN
+@22
+prince_axis_tb.uut.i_prince_top.k1[63:0]
+prince_axis_tb.uut.i_prince_top.k0_start[63:0]
+prince_axis_tb.uut.i_prince_top.plaintext[63:0]
+prince_axis_tb.uut.i_prince_top.ciphertext[63:0]
+prince_axis_tb.ciphertext[63:0]
+prince_axis_tb.M_AXIS_TDATA[31:0]
+@23
+prince_axis_tb.uut.ip_ciphertext[63:0]
+[pattern_trace] 1
+[pattern_trace] 0

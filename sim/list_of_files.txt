@@ -1,0 +1,10 @@
+# /prince_axis_tb.v
+./tb_prince_top.v
+../verilog/prince_top.v
+../verilog/prince_core.v
+../verilog/sbox.v
+../verilog/sbox_inv.v
+../verilog/linear_m_inv.v
+../verilog/linear_mprime.v
+../verilog/linear_m.v
+../verilog/axi_stream_wrapper.v

@@ -1,0 +1,49 @@
+#
+read -vlog2k  ../verilog/prince_top.v
+     
+read -vlog2k ../verilog/prince_core.v
+read -vlog2k ../verilog/sbox.v
+read -vlog2k ../verilog/sbox_inv.v
+read -vlog2k ../verilog/linear_m_inv.v
+read -vlog2k ../verilog/linear_mprime.v
+read -vlog2k ../verilog/linear_m.v
+ 
+#-- read memory models
+
+
+hierarchy -top prince_top
+
+# high-level stuff
+proc; fsm; opt; memory; opt
+
+# mapping to internal cell lib
+techmap; opt
+
+synth -top prince_top
+
+#-- mapping flip-flop to cmos_cells.lib
+dfflibmap -liberty cmos_cells.lib
+
+#-- mapping logic to cmos_cells.lib
+abc -liberty cmos_cells.lib
+
+opt
+
+stat
+
+#-- removed unused cells and wires
+clean
+
+write_verilog -noattr design.v
+
+flatten
+
+opt
+
+stat
+#-- removed unused cells and wires
+
+#-- removed unused cells and wires
+clean
+
+write_verilog -noattr design_flat.v
